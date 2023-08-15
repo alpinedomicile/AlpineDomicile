@@ -1,0 +1,59 @@
+.n-wrapper{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.n-list{
+    flex: 10;
+}
+.n-list>ul{
+    display: flex;
+    gap: 3rem;
+    margin-right: 1rem;
+
+}
+.hyper{
+    font-family: 'Philosopher';
+    font-weight: 400;
+}
+
+#butt{
+    flex: 2;
+    padding: 10px 26px 10px 26px;
+    width: 130px;
+}
+.hyper:hover{
+    color: var(--lblue);
+    cursor: pointer;
+}
+@media  screen and (max-width: 480px) {
+    .n-list{
+        display: none;
+    }
+    .n-logo{
+        width: auto;
+        height: 38px;
+    }
+    .n-wrapper{
+        box-shadow: var(--boxShadow);
+    }
+}
+@media  screen and (max-width: 768px){
+    .n-list{
+        display: none;
+    }
+}
